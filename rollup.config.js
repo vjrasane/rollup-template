@@ -21,7 +21,7 @@ export default {
     babel({
       // babel is configured here instead of the RC file which Jest uses
       babelrc: false,
-      presets: [['env', { modules: false }]],
+      presets: [['env', { modules: false }], 'flow'],
       plugins: [
         'external-helpers',
         'transform-class-properties',

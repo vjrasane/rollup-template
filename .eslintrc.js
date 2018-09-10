@@ -1,5 +1,9 @@
 module.exports = {
+  parser: "babel-eslint",
   extends: 'standard',
+  env: {
+    jest : true
+  }
   globals: {
     // browser
     document: false,
@@ -10,14 +14,6 @@ module.exports = {
     require: true,
     process: true,
     console: true,
-    module: true,
-    // jest
-    describe: true,
-    it: true,
-    expect: true,
-    beforeAll: true,
-    beforeEach: true,
-    afterAll: true,
-    afterEach: true
+    module: true
   }
 };

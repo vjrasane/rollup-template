@@ -1,1 +1,3 @@
-export const message = 'Hello World!'
+/* @flow */
+
+export const message: string = 'Hello World!'
