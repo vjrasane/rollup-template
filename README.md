@@ -3,7 +3,15 @@ Basic configuration for Rollup and other useful things
 
 [![License][asl-2.0 badge]][asl-2.0] [![Build Status][travis badge]][travis] [![Coverage Status][coverage badge]][coveralls] [![npm version][npm badge]][npm]
 
-## Travis Deployment
+## Installation
+
+### Project dependencies
+
+Install with yarn (duh)
+
+```
+yarn install
+```
 
 ### Flow types
 
@@ -12,6 +20,8 @@ Install flow typed dependencies
 ```
 flow-typed install
 ```
+
+## Travis Deployment
 
 ### NPM auth token
 
