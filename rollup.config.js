@@ -11,15 +11,19 @@ export default {
   // output bundle file
   output: {
     file: 'dist/main.js',
-    format: 'cjs'
+    format: 'cjs' // usually the best choice
     // add banner for command line tool
     /* banner: "#! /usr/bin/env node" */
   },
   plugins: [
     progress(),
-    // add rollup-node-resolve plugin here if libraries should be bundled together, but you really shouldnt
+    // add rollup-plugin-node-resolve plugin here if libraries should be bundled together, but you really shouldnt
+    // also add rollup-plugin-commonjs if the libraries are in commonjs format, but you really really shouldnt
     babel({
-      // babel is configured here instead of the RC file which Jest uses
+      /*
+      * Babel has to be configured separately for rollup, because we cannot use module transformers with it, which
+      * in turn are required by Jest, which will read its configuration from .babelrc
+      */
       babelrc: false,
       presets: [['env', { modules: false }], 'flow'],
       plugins: [
