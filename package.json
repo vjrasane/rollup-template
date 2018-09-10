@@ -56,13 +56,6 @@
     "standard": "^12.0.1"
   },
   "standard": {
-    "globals": [
-      "__dirname",
-      "require",
-      "process",
-      "console",
-      "module"
-    ],
     "parser": "babel-eslint",
     "plugins": [
       "flowtype"
@@ -71,7 +64,8 @@
       "flow-typed/**"
     ],
     "env": [
-      "jest"
+      "jest",
+      "node"
     ]
   }
 }
