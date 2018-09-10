@@ -1,0 +1,57 @@
+{
+  "name": "rollup-template",
+  "version": "0.0.1",
+  "description": "Basic configuration for Rollup and other useful things",
+  "main": "index.js",
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "watch": "rollup -c -w",
+    "lint": "node_modules/.bin/eslint .",
+    "test": "cross-env NODE_ENV=development jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjrasane/rollup-template.git"
+  },
+  "keywords": [
+    "template",
+    "rollup",
+    "travis",
+    "eslint",
+    "jest",
+    "babel"
+  ],
+  "author": "Ville Räsänen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vjrasane/rollup-template/issues"
+  },
+  "homepage": "https://github.com/vjrasane/rollup-template#readme",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+
+    "rollup": "^0.60.1",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-progress": "^0.4.0",
+    "rollup-plugin-uglify": "^4.0.0",
+
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "jest": "^23.5.0"
+  }
+}
