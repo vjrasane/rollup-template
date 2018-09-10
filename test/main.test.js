@@ -1,5 +1,5 @@
-import { message } from '../src/main';
+import { message } from '../src/main'
 
 it('test', () => {
-  console.log(message);
-});
+  console.log(message)
+})

@@ -19,9 +19,5 @@ module.exports = {
     beforeEach: true,
     afterAll: true,
     afterEach: true
-  },
-
-  rules: {
-    semi: ['error', 'always']
   }
 };
