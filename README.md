@@ -5,6 +5,14 @@ Basic configuration for Rollup and other useful things
 
 ## Travis Deployment
 
+### Flow types
+
+Install flow typed dependencies
+
+```
+flow-typed install
+```
+
 ### NPM auth token
 
 Your NPM Auth Token can be obtained by:
