@@ -1,5 +1,15 @@
 # rollup-template
-Basic configuration for Rollup and other useful things
+Basic configuration for Rollup and other useful things:
+    
+    * Babel
+    * Standard ESLint
+    * StandardJS
+    * Flow types
+    * Jest
+    * Husky
+    * Travis
+    * Coveralls
+
 
 [![License][asl-2.0 badge]][asl-2.0] [![Build Status][travis badge]][travis] [![Coverage Status][coverage badge]][coveralls] [![npm version][npm badge]][npm]
 
@@ -19,6 +29,39 @@ Install flow typed dependencies
 
 ```
 flow-typed install
+```
+
+## Building
+
+Create bundle
+```
+yarn build
+```
+And run with
+```
+node dist/main.js
+```
+
+Continuous rebuilding
+```
+yarn watch
+```
+Create tarball
+```
+yarn pack
+```
+
+## Testing
+
+Run code style check and all tests
+
+```
+yarn test
+```
+
+Filter tests
+```
+yarn test -t <my-test-pattern>
 ```
 
 ## Travis Deployment
