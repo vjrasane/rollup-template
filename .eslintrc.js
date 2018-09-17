@@ -4,5 +4,8 @@ module.exports = {
   env: {
     jest : true,
     node: true
+  },
+  rules: {
+    'no-console': 'warn'
   }
 };

@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "Basic configuration for Rollup and other useful things",
   "main": "dist/main.js",
+  "bin": {
+    "rollup-template": "dist/main.js"
+  },
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "cross-env NODE_ENV=production rollup -c",
-    "watch": "rollup -c -w",
+    "watch": "cross-env NODE_ENV=development rollup -c -w",
     "lint": "node_modules/.bin/eslint .",
     "test": "standard && cross-env NODE_ENV=development jest --coverage"
   },
@@ -54,6 +57,7 @@
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-progress": "^0.4.0",
     "rollup-plugin-uglify": "^4.0.0",
